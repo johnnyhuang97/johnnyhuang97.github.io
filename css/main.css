@@ -3485,6 +3485,7 @@ html.no-csstransitions .hero-content {
  * typewriter effect
  * color orange: f9861a;
  * ------------------------------------------------------------------- */
-h1 span{
-    color: #b3c2c1;
-    text-decoration: underline; }
+
+h1, .h1 span{
+  color: #b3c2c1;
+  text-decoration: underline; }
