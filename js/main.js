@@ -311,6 +311,31 @@
         });
     };
 
+
+
+   /* initialize
+    * ------------------------------------------------------ */
+    (function ssInit() {
+
+        ssPreloader();
+        ssPrettyPrint();
+        ssMoveHeader();
+        ssMobileMenu();
+        ssAccordion();
+        ssPhotoswipe();
+        ssSlickSlider();
+        ssAOS();
+        ssAlertBoxes();
+        ssSmoothScroll();
+        ssBackToTop();
+
+
+
+    })();
+
+})(jQuery);
+
+(function($) {
     /* typing font
     * -------------------------------------------------- */
     var TxtRotate = function(el, toRotate, period) {
@@ -369,27 +394,5 @@
       css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
       document.body.appendChild(css);
     };
-
-
-
-   /* initialize
-    * ------------------------------------------------------ */
-    (function ssInit() {
-
-        ssPreloader();
-        ssPrettyPrint();
-        ssMoveHeader();
-        ssMobileMenu();
-        ssAccordion();
-        ssPhotoswipe();
-        ssSlickSlider();
-        ssAOS();
-        ssAlertBoxes();
-        ssSmoothScroll();
-        ssBackToTop();
-        TxtRotate();
-
-
-    })();
 
 })(jQuery);
