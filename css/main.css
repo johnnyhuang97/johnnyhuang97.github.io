@@ -3480,3 +3480,11 @@ html.no-csstransitions .hero-content {
   }
 
 }
+
+/* ------------------------------------------------------------------- 
+ * typewriter effect
+ * ------------------------------------------------------------------- */
+.slider-text h2 span{
+  color: #f9861a;
+  text-decoration: underline; }
+}
