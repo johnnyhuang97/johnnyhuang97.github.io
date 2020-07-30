@@ -3484,8 +3484,8 @@ html.no-csstransitions .hero-content {
 /* ------------------------------------------------------------------- 
  * typewriter effect
  * ------------------------------------------------------------------- */
-
-.slider-text h1 span{
-  color: #f9861a;
-  text-decoration: underline; }
-}
+.slider-text h1 {
+  font-weight: 800; }
+  .slider-text h1 span{
+    color: #f9861a;
+    text-decoration: underline; }
