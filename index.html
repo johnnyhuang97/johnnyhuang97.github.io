@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="johnny huang's portfolio"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://johnnyhuang97.github.io/"/>
+
+    <title>Johnny Huang</title>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="js/scrolling.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/fadeOnLoad.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla:200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/modal.css" />
+    <link href="img/favi/loop.png" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="horizontal-nav">
+            <div class="flexbox-container">
+                <div class="one"><a class="active" href="#about">about</a></div>
+                <div class="two"><a href="#projects">projects</a></div>
+                <div class="three"><a href="#education">education</a></div>
+                <div class="four"><a href="assets/resume.pdf" target="_blank">resume</a></div>
+                <div class="five"><a href="#contact">contact</a></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1 class="title">hello, i'm johnny —</h1>
+            <p class="content">
+                <span class="content-intro">i am a
+                    <span class="intro">
+                        <span class="txt-rotate"
+                              data-period="1500"
+                              data-rotate='[ "student.", "developer.", "problem solver." ]'>
+                        </span>
+                    </span>
+                </span><br> <br>
+                check out my <a href="assets/resume.pdf" target="_blank">resume</a> to learn more about what I've done and am involved in!
+            </p>
+        </div>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+    <div id="projects" class="page">
+        <div class="horizontal-nav">
+            <div class="flexbox-container">
+                <div class="one"><a href="#about">about</a></div>
+                <div class="two"><a class="active" href="#projects">projects</a></div>
+                <div class="three"><a href="#education">education</a></div>
+                <div class="four"><a href="assets/resume.pdf" target="_blank">resume</a></div>
+                <div class="five"><a href="#contact">contact</a></div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1 id="projects-title" class="title">projects.</h1>
+            <div class="flexbox-container">
+                <div class="clickable md-trigger" data-modal="canvas-modal">
+                    <div class="projects-content">
+                        <img class="preview" src="img/projects/preview/SCRAPER.png">
+                        <div class="overlay">
+                            <div class="text">
+                                canvas file sync
+                                <p class="project-type">code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clickable md-trigger" data-modal="bearmaps-modal">
+                    <div class="projects-content">
+                        <img class="preview" src="img/projects/preview/BEARMAPS.png">
+                        <div class="overlay">
+                            <div class="text">
+                                bearmaps
+                                <p class="project-type">code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clickable md-trigger" data-modal="databases-modal">
+                    <div class="projects-content">
+                        <img class="preview" src="img/projects/preview/DB.png">
+                        <div class="overlay">
+                            <div class="text">
+                                databases
+                                <p class="project-type">code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end of flexbox-container -->
+        </div> <!-- end of wrapper -->
+        <!-- PROJECT MODALS -->
+        <div class="md-modal md-effect" id="canvas-modal">
+            <div class="md-content">
+                <h3>Canvas File Sync <span class="project-type">&#60;personal project&#62;</span></h3>
+                <div class="centered-flexbox flexbox-container content">
+                    <div class="row-one">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Technology:
+                            </div>
+                            <div class="right">
+                                Python, JSON, OAuth, rclone
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-two">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Description:
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>Built program that handles syncing Canvas course files to local computers. </li>
+                                    <li>This program aims to work by having Google Drive like functionality with Canvas so that
+                                        you never have to worry about being up to date or how you have organized things
+                                        because they will be organized on your computer just as they are organized on Canvas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-three">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Code:
+                            </div>
+                            <div class="right">
+                                <a href="bit.ly/jh-filesync">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="md-close">&#10006;</button>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+        <div class="md-modal md-effect" id="databases-modal">
+            <div class="md-content">
+                <h3>Databases <span class="project-type">&#60;class project&#62;</span></h3>
+                <div class="centered-flexbox flexbox-container content">
+                    <div class="row-one">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Technology:
+                            </div>
+                            <div class="right">
+                                Java, IntelliJ, SQL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-two">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Description:
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>Served as the project architect by creating the design doc as well as determining project infrastructure and integrations between frontend and backend.</li>
+                                    <li>Implemented backend for SQL-like user queries: i.e. joining tables, filtering rows, and computation for differing data types.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-three">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Code:
+                            </div>
+                            <div class="right">
+                                <a href="bit.ly/jh-database">Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="md-close">&#10006;</button>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+        <div class="md-modal md-effect" id="bearmaps-modal">
+            <div class="md-content">
+                <h3>BearMaps <span class="project-type">&#60;class project&#62;</span></h3>
+                <div class="centered-flexbox flexbox-container content">
+                    <div class="row-one">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Technology:
+                            </div>
+                            <div class="right">
+                                 Java, IntelliJ, Open Street Maps API
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-two">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Description:
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>Programmed the backend of an interactive, fully-functioning maps/locationing web server.</li>
+                                    <li>Implemented shortest path algorithms (A*) to allow for efficient routing feedback, as well as Trie trees for name-search autocompletion capabilities.</li>
+                                    <li>Used quadtrees to support image and map rasterization/zoom.</li>
+                                    <li>Read in real-life data from Open Street Map datasets to construct underlying graph database.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-three">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Code:
+                            </div>
+                            <div class="right">
+                                <span class="strikethough">Github</span> Private Repo
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-four">
+                        <div class="flexbox-container">
+                            <div class="left">
+                                Demo:
+                            </div>
+                            <div class="right">
+                                <a href="bit.ly/jh-bearmaps" target="_blank">Heroku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="md-close">&#10006;</button>
+            </div>
+        </div>
+        <div class="md-overlay"></div>
+
+    </div> <!-- end of page -->
+
+    <!-- TEACHING PAGE -->
+    <div id="education" class="page">
+        <div class="horizontal-nav">
+            <div class="flexbox-container">
+                <div class="one"><a href="#about">about</a></div>
+                <div class="two"><a href="#projects">projects</a></div>
+                <div class="three"><a class="active" href="#education">education</a></div>
+                <div class="four"><a href="assets/resume.pdf" target="_blank">resume</a></div>
+                <div class="five"><a href="#contact">contact</a></div>
+            </div>
+        </div>
+        <div class="center wrapper">
+            <div class="centered-flexbox">
+            <div class="flexbox-container">
+                <div class="left">
+                    <h1 class="title">education.<br> uc berkeley</h1>
+                </div>
+                <div class="right education-content">
+                    c/o 2020 <br>
+                    studying computer science, data science, and political science <br>
+                    <button class="md-trigger"  data-modal="education-modal">technical coursework</button>!
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- education ARCHIVE MODAL -->
+        <div class="md-modal md-effect" id="education-modal">
+			<div class="md-content">
+				<h3>technical coursework</h3>
+				<div>
+                    <div class="centered-flexbox flexbox-container archive">
+                        <div class="left emphasize">
+                            <ul>
+                                <li>CS 61A </li>
+                                <li>CS 61B</li>
+                                <li>CS 61C</li>
+                                <li>CS 70</li>
+                                <li>Data 100</li>
+                                <li>CS 162</li>
+                                <li>CS 170</li>
+                                <li>CS 186</li>
+                                <li>CS 188</li>
+                                <li>Math 104</li>
+                                <li>Math 110</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li>Structure and Interpretation of Computer Programs/li>
+                                <li>Data Structures</li>
+                                <li>Machine Structures</li>
+                                <li>Discrete Mathematics and Probability Theory</li>
+                                <li>Principles & Techniques of Data Science </li>
+                                <li>Operating Systems and System Programming </li>
+                                <li>Efficient Algorithms and Intractable Problems </li>
+                                <li>Introduction to Database Systems</li>
+                                <li>Introduction to Artificial Intelligence</li>
+                                <li>Introduction to Analysis </li>
+                                <li>Linear Algebra</li>
+                            </ul>
+                        </div>
+                    </div>
+					<button class="md-close">&#10006;</button>
+				</div>
+			</div>
+		</div>
+		<div class="md-overlay"></div>
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact">
+        <div class="contacts-flexbox">
+            <div id="contacts-content" class="flexbox-container">
+                <div class="left">
+                    <p class="contacts-title">
+                        Johnny Huang
+                    </p>
+                    <p class="contacts-subtitle">
+                        Student. Mentor. Problem solver.
+                    </p>
+                </div>
+                <div class="middle">
+                    <p class="contacts-title">
+                        Contact
+                    </p>
+                    <p class="contacts-subtitle">
+                        <a href="mailto:johnny.h1997@berkeley.edu">johnny.h1997@berkeley.edu</a>
+                    </p>
+                </div>
+                <div class="right">
+                    <p class="contacts-title">
+                        Social
+                    </p>
+                    <div class="contacts-subtitle">
+                        <a href="https://github.com/johnnyhuang97" target="_blank">Github.</a>
+                        <a href="https://www.linkedin.com/in/johnnyhuang97/" target="_blank">LinkedIn.</a>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
